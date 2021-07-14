@@ -1,0 +1,197 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="18122" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="KsZ-tb-fwJ">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="18093"/>
+        <capability name="Image references" minToolsVersion="12.0"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Home-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="Tabbed" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Menampilkan Date Picker" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="2hu-KH-KDb">
+                                <rect key="frame" x="20" y="64" width="374" height="29"/>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="24"/>
+                                <color key="textColor" red="0.32369780539999998" green="0.1063579395" blue="0.574860394" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <datePicker contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" datePickerMode="date" style="wheels" translatesAutoresizingMaskIntoConstraints="NO" id="sc0-gw-WT7">
+                                <rect key="frame" x="0.0" y="128" width="414" height="216"/>
+                                <locale key="locale" localeIdentifier="id_ID"/>
+                            </datePicker>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="kow-6i-gFf">
+                                <rect key="frame" x="20" y="394" width="374" height="41"/>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="24"/>
+                                <state key="normal" title="Get Date">
+                                    <color key="titleColor" red="0.32369780539999998" green="0.1063579395" blue="0.574860394" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                </state>
+                                <connections>
+                                    <action selector="btnGetDate:" destination="BYZ-38-t0r" eventType="touchUpInside" id="X0e-iY-pca"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="kow-6i-gFf" firstAttribute="top" secondItem="sc0-gw-WT7" secondAttribute="bottom" constant="50" id="2Lz-Kw-ofI"/>
+                            <constraint firstItem="2hu-KH-KDb" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="20" id="7Bv-en-equ"/>
+                            <constraint firstItem="kow-6i-gFf" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="20" id="Up2-9W-98X"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="kow-6i-gFf" secondAttribute="trailing" constant="20" id="fNg-FA-JBU"/>
+                            <constraint firstItem="2hu-KH-KDb" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="20" id="ilr-LN-EfK"/>
+                            <constraint firstItem="sc0-gw-WT7" firstAttribute="top" secondItem="2hu-KH-KDb" secondAttribute="bottom" constant="35" id="p2l-Sq-zrf"/>
+                            <constraint firstItem="sc0-gw-WT7" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="qyW-B7-dFv"/>
+                            <constraint firstAttribute="trailing" secondItem="sc0-gw-WT7" secondAttribute="trailing" id="tdH-5A-Vl6"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="2hu-KH-KDb" secondAttribute="trailing" constant="20" id="xrN-Zk-wNh"/>
+                        </constraints>
+                    </view>
+                    <tabBarItem key="tabBarItem" title="Home" id="VHt-xE-PKE">
+                        <imageReference key="image" image="book.fill" catalog="system" symbolScale="default"/>
+                    </tabBarItem>
+                    <connections>
+                        <outlet property="myDatePicker" destination="sc0-gw-WT7" id="OR9-ss-l55"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="936" y="54"/>
+        </scene>
+        <!--Gallery-->
+        <scene sceneID="IhZ-Pg-QCO">
+            <objects>
+                <viewController id="gd8-dS-deU" customClass="SecondViewController" customModule="Tabbed" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="dCj-9N-bdQ">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Menampilkan Picker View" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="1vw-ce-BRH">
+                                <rect key="frame" x="20" y="74" width="374" height="29"/>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="24"/>
+                                <color key="textColor" red="0.32369780539999998" green="0.1063579395" blue="0.574860394" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="nK9-m0-N8v">
+                                <rect key="frame" x="20" y="439" width="374" height="41"/>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="24"/>
+                                <state key="normal" title="Get Picker View">
+                                    <color key="titleColor" red="0.32369780539999998" green="0.1063579395" blue="0.574860394" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                </state>
+                                <connections>
+                                    <action selector="btnGetPicker:" destination="gd8-dS-deU" eventType="touchUpInside" id="5NQ-EH-hKi"/>
+                                </connections>
+                            </button>
+                            <pickerView multipleTouchEnabled="YES" tag="2" contentMode="scaleToFill" semanticContentAttribute="spatial" translatesAutoresizingMaskIntoConstraints="NO" id="OOb-51-oFW">
+                                <rect key="frame" x="20" y="163" width="374" height="216"/>
+                            </pickerView>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="Dv6-j7-Ta7"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="Dv6-j7-Ta7" firstAttribute="trailing" secondItem="OOb-51-oFW" secondAttribute="trailing" constant="20" id="6Ei-iF-VmA"/>
+                            <constraint firstItem="1vw-ce-BRH" firstAttribute="top" secondItem="Dv6-j7-Ta7" secondAttribute="top" constant="30" id="Igp-MM-yE1"/>
+                            <constraint firstItem="1vw-ce-BRH" firstAttribute="leading" secondItem="Dv6-j7-Ta7" secondAttribute="leading" constant="20" id="QTS-PA-wif"/>
+                            <constraint firstItem="OOb-51-oFW" firstAttribute="top" secondItem="1vw-ce-BRH" secondAttribute="bottom" constant="60" id="ThR-KT-DUn"/>
+                            <constraint firstItem="Dv6-j7-Ta7" firstAttribute="trailing" secondItem="1vw-ce-BRH" secondAttribute="trailing" constant="20" id="aZl-YZ-l8u"/>
+                            <constraint firstItem="Dv6-j7-Ta7" firstAttribute="trailing" secondItem="nK9-m0-N8v" secondAttribute="trailing" constant="20" id="dxd-ZN-sQA"/>
+                            <constraint firstItem="nK9-m0-N8v" firstAttribute="leading" secondItem="Dv6-j7-Ta7" secondAttribute="leading" constant="20" id="sEf-6W-U1Y"/>
+                            <constraint firstItem="OOb-51-oFW" firstAttribute="leading" secondItem="Dv6-j7-Ta7" secondAttribute="leading" constant="20" id="ubf-GN-1mj"/>
+                            <constraint firstItem="nK9-m0-N8v" firstAttribute="top" secondItem="OOb-51-oFW" secondAttribute="bottom" constant="60" id="xjO-x1-USU"/>
+                        </constraints>
+                    </view>
+                    <tabBarItem key="tabBarItem" title="Gallery" id="afg-ou-G6s">
+                        <imageReference key="image" image="folder.fill" catalog="system" symbolScale="default"/>
+                    </tabBarItem>
+                    <connections>
+                        <outlet property="pickerView1" destination="OOb-51-oFW" id="gdA-Tz-oqf"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="mLp-QE-v3m" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-562.31884057971024" y="792.85714285714278"/>
+        </scene>
+        <!--Contact-->
+        <scene sceneID="KF6-ez-8Rj">
+            <objects>
+                <viewController id="zxd-fi-7EQ" customClass="ThirdViewController" customModule="Tabbed" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="Wkz-gK-jrZ">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Tab 3" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="IFP-sI-Qt5">
+                                <rect key="frame" x="184.5" y="437.5" width="45" height="21"/>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="znd-xi-8Cg"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="IFP-sI-Qt5" firstAttribute="centerX" secondItem="Wkz-gK-jrZ" secondAttribute="centerX" id="9Cr-SX-6QN"/>
+                            <constraint firstItem="IFP-sI-Qt5" firstAttribute="centerY" secondItem="Wkz-gK-jrZ" secondAttribute="centerY" id="YOQ-9D-r2v"/>
+                        </constraints>
+                    </view>
+                    <tabBarItem key="tabBarItem" title="Contact" id="nfc-lV-1Z1">
+                        <imageReference key="image" image="mail.fill" catalog="system" symbolScale="default"/>
+                    </tabBarItem>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="eBH-i9-HLB" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="132" y="793"/>
+        </scene>
+        <!--About-->
+        <scene sceneID="nQf-Aq-gtb">
+            <objects>
+                <viewController id="jn6-zI-e1c" customClass="FourthViewController" customModule="Tabbed" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="Zpd-Ap-u8J">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <viewLayoutGuide key="safeArea" id="PGU-St-wzO"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                    </view>
+                    <tabBarItem key="tabBarItem" title="About" id="Lj5-ec-WXg">
+                        <imageReference key="image" image="person.and.person.fill" catalog="system" symbolScale="default"/>
+                    </tabBarItem>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="WoB-c4-hw6" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="832" y="793"/>
+        </scene>
+        <!--Tab Bar Controller-->
+        <scene sceneID="tzy-8J-SaK">
+            <objects>
+                <tabBarController automaticallyAdjustsScrollViewInsets="NO" id="KsZ-tb-fwJ" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <tabBar key="tabBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="T63-zE-nJ7">
+                        <autoresizingMask key="autoresizingMask"/>
+                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    </tabBar>
+                    <connections>
+                        <segue destination="BYZ-38-t0r" kind="relationship" relationship="viewControllers" id="b0Z-KG-Tyi"/>
+                        <segue destination="gd8-dS-deU" kind="relationship" relationship="viewControllers" id="GBM-ZA-n54"/>
+                        <segue destination="zxd-fi-7EQ" kind="relationship" relationship="viewControllers" id="giW-gP-0Gt"/>
+                        <segue destination="jn6-zI-e1c" kind="relationship" relationship="viewControllers" id="Zc8-to-of1"/>
+                    </connections>
+                </tabBarController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Aq5-i0-6mV" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="131.8840579710145" y="53.571428571428569"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="book.fill" catalog="system" width="128" height="102"/>
+        <image name="folder.fill" catalog="system" width="128" height="97"/>
+        <image name="mail.fill" catalog="system" width="128" height="93"/>
+        <image name="person.and.person.fill" catalog="system" width="128" height="80"/>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>
